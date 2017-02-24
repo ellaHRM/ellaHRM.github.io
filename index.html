@@ -2,20 +2,99 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>Форма 2. ДЗ</title>
-	<link rel="stylesheet" type="text/css" href="css/css2.css">
+	<title>Project3</title>
+	<link rel="stylesheet" type="text/css" href="css/newmain.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script language="Javascript" type="text/javascript" src="js/jquery-1.4.1.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-0.9.5.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/misc.js"></script>
 </head>
 <body>
 <div class='wrapper'>
-	<div class='form2'>
-		<form name='' method="post">
-			<div class="hed">Регистрация</div>
-			<div class='input'><label>Ваше имя:</label><input type="text"></div>
-			<div class='input'><label>E-mail:</label><input type="text"></div>
-			<div class='input'><label>Пароль:</label><input type="password"></div>
-			<div class='input'><label>Повторите пароль:</label><input type="password"></div>
-			<div class='input button'><input type="button" value='ВОЙТИ'></div>
+	<div class='wrap'>
+		<img src="images/top_logo.png">	
+		<form action="">
+			<p class='title'>До откытия сайта осталось:</p>
+			<!-- счетчик -->
+				<div id="container">
+				<h3>До открытия сайта осталось:</h3>
+				 <div id="countdown_dashboard">
+					<div class="dash weeks_dash">
+						<span class="dash_title">Недель</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash days_dash">
+						<span class="dash_title">Дней</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash hours_dash">
+						<span class="dash_title">Часов</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash minutes_dash">
+						<span class="dash_title">Минут</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash seconds_dash">
+						<span class="dash_title">Секунд</span>
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+				</div> 
+				
+				<script language="javascript" type="text/javascript">
+					jQuery(document).ready(function() {
+						$('#countdown_dashboard').countDown({
+							targetDate: {
+								'day': 		30,
+								'month': 	12,
+								'year': 	2018,
+								'hour': 	12,
+								'min': 		00,
+								'sec': 		00					
+								}
+						});
+						
+					});
+				</script>
+			
+			</div>
+			<!-- конец счетчик -->
+
+			<table>
+				<tr>
+					<td><label>Логин:</label></td>
+					<td><input type="text" name"one" class="input"></td>
+				</tr>
+				<tr>
+					<td><label>Пароль:</label></td>
+					<td><input type="password" name="one" class="input"></td>
+				</tr>
+				<tr><td></td>
+				<td align="center"><input type="submit" value="отправить" class='submit'></td></tr>
+			</table>
+
+			<hr>
+			<!-- 2 форма -->
+			<div class='form2'>
+				<div class='my'><label class=''>Логин:</label><input type="text" name"one" class="input"></div>
+				<div class='clear'></div>
+				<div class='my'><label class=''>Пароль:</label><input type="password" name="one" class="input"></div>
+				<div class='my'><input type="submit" value="отправить" class='submit'></div>
+			</div>
+			
 		</form>
+
+
 	</div>
 </div>
 
