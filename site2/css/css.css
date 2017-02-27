@@ -1,0 +1,20 @@
+/*CSS*/
+html,body{height: 100%;}
+body{background:url('../images/bg.jpg') center center no-repeat; background-size: cover; }
+.wrapper{
+	height: 100%; 
+	display: flex;
+	justify-content: center;}
+.wrap{width:580px; margin:auto; background: #000; opacity: 0.8; padding:10px; border-radius: 30px;
+}
+.input{width:173px; background: #fff; border:1px #c3b588 solid; padding:5px;}
+form label{color: red;}
+.title{text-align: center; font-weight: bold; color:#c3b588;}
+table{margin:auto;}
+.submit{background: #ccc; color:#000; border-radius: 5px; padding:5px; border:none;}
+.form2{width: 246px; margin: auto;}
+.my {height: 31px;}
+.my label{width:59px; display:block; float:left;}
+.my input.input{float:right;}
+.my input.submit{margin-left:120px;}
+.clear{clear: both; width: 100%; overflow: hidden;}
