@@ -28,8 +28,7 @@ button[type="submit"]{
     background: #29c5e6;
     font-family: 'Oswald', sans-serif;
     width: 42px;
-    position:relative;
-    top:1px;
+    float: inherit;
 }
 form[name="search"]{
     float:right;
