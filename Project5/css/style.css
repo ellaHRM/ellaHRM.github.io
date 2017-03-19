@@ -5,7 +5,9 @@ body{
     border-top:5px solid #7e7e7e;
     background: #f8f8f8 url(../images/bg.png);
     font-weight: 300;
+    font-family: Tahoma;
 }
+main{font-size: 13px;}
 .wrapper{
     max-width: 960px;
     margin: auto;
@@ -116,6 +118,7 @@ aside{
 section{
     margin-left:280px;
     padding-bottom:50px;
+
 }
 .aside-menu li:first-child{
     border: none;
@@ -314,3 +317,88 @@ footer p{
     color: #d5d5d5;
     text-decoration: underline;
 }
+
+div.banner{
+    background: #e2e2e2;
+    height: 330px;
+    position: relative;
+    margin-top: 30px;
+
+}
+div.banner h1{margin:30px 0px 0 30px; background: none; padding:0; font-weight: 300; color: #5a5a5a;}
+div.banner p{margin-left:30px; font-family: 'Oswald', sans-serif; color: #acacac; font-size: 18px;}
+div.banner ol{
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+    background: #f3f3f3;
+    border-bottom: #e7e7e7 1px solid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+div.banner ol li{
+    width: 25%;
+    display: inline-block;
+    counter-increment: step-counter;
+    margin-top:15px;
+    margin-bottom:15px;
+    text-transform: uppercase;
+}
+div.banner ol li.active {
+    color: #29c5e6;
+}
+div.banner ol li:before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    margin-left:15px;
+    font-size: 17px;
+    background-color: #8f8f8f;
+    color: white;
+    font-weight: bold;
+    padding: 0px 8px;
+    font-weight: 300;
+}
+div.banner ol li.active:before {
+    background-color:#29c5e6;
+    color: white;
+}
+div.banner ol li a{}
+div.banner ol li a.active{}
+
+div.col-2,div.col-3{width: 50%; display: inline-block; float: left;}
+div.col-3{width: 320px;}
+div.col-2 div, div.col-3 div{padding: 10px; text-align: justify;}
+div.col-2 span, div.col-3 span{display: block;  text-align: left; margin-top: 7px;}
+div.col-2 a, div.col-3 a{color: #525252; text-decoration: none;}
+div.col-3 a{text-decoration: underline;}
+
+div.col-2 img{
+    width: 138px;
+    height: 138px;
+    border: 1px solid #fff;
+    outline: 1px solid #c9c9c9;
+    float: left;
+    margin-right: 15px;
+}
+main h3, .padding-10 h3{border-left:15px #29c5e6 solid; padding: 0; margin: 0; padding: 0px 12px; display: inline-block; background: #8f8f8f; background: url(../images/bg.png); font-weight: 400; font-family: 'Oswald', sans-serif; line-height: 19px; font-size: 16px;}
+main .heading{padding: 0 !important; height: 18px; margin-bottom:15px; }
+.padding-10{padding:10px;}
+.padding-10 .heading{
+    margin:10px 0;
+}
+img.lc{
+    margin: auto;
+}
+p.center{text-align: center;}
+div.col-3 img{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    outline: 1px solid #c9c9c9;
+    float: left;
+    margin-right: 10px;
+}
+div.col-3 .team-row{margin: 0; padding: 5px; }
+div.col-3 h5{text-transform: uppercase; font-weight: 500; color: #525252;}
+div.col-3 p{ font-size: 11px;}
