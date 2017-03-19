@@ -126,7 +126,7 @@ section{
 .aside-menu li.active, .aside-menu li.active a, .aside-menu li a:hover, .aside-menu li:hover{
     color: #29c5e6;
 }
-aside > h2, section > h2{
+aside > h2, section > h2, main h2{
     padding:10px;
     background:#29c5e6;
     color: #fff;
@@ -136,6 +136,7 @@ aside > h2, section > h2{
     font-size: 15px;
     margin:30px 0 0 0;
 }
+main h2{font-size: 30px; padding: 0; padding-left: 10px;}
 aside > p{
     border: 1px solid #e7e7e7;
     border-top: none;
@@ -402,3 +403,21 @@ div.col-3 img{
 div.col-3 .team-row{margin: 0; padding: 5px; }
 div.col-3 h5{text-transform: uppercase; font-weight: 500; color: #525252;}
 div.col-3 p{ font-size: 11px;}
+
+
+/*3*/
+div.col-2 img.width-320 {
+    width: 320px;
+    height: 175px;
+}
+main p{ text-align: justify;}
+.wrap{width: 100%; overflow: hidden;}
+.margin-top-30{
+    margin-top: 30px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.wrap p{text-align: center; text-transform: uppercase; font-family: 'Oswald', sans-serif;  display: block; height: auto; margin: 7px;}
+.wrap img{margin-left: 16px;  display: block; float: none !important;}
+.wrap img.left{margin-left: 1px;}
